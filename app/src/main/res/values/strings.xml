@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+
+    <string name="list_layout_title">Welcome to the world of Movies</string>
+    <string name="movie_card_image_view_content_description">Movie Image</string>
+    <string name="movie_release_date_prefix">Release Date:</string>
+    <string name="movie_actors_prefix">Actors:</string>
+    <string name="movie_director_prefix">Director:</string>
+    <string name="movie_rating_prefix">IMDB Rating:</string>
+    <string name="movie_genre_prefix">Genre:</string>
+    <string name="movie_box_office_collection_prefix">Box Office Collection:</string>
+</resources>

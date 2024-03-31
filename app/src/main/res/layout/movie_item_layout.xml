@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.example.movieapp.Movie" />
+
+        <variable
+            name="movieCardClickListener"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/movie_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:onClick="@{movieCardClickListener}"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/movie_card_items_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/movie_card_image_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/movie_card_image_view_content_description"
+                tools:src="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/movie_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@{movie.title}"
+                tools:text="Movie Name"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
